@@ -1,8 +1,3 @@
-import '../src/application.scss'
-require.context('../images', true, /\.(png|jpg|jpeg|svg)$/);
-
-console.log('Hello World from Webpacker');
-
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementsByName('text-change-btn')[0];
   btn.addEventListener('click', () => {
