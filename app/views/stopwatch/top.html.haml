@@ -1,0 +1,10 @@
+%h1 ストップウォッチ
+
+.container
+  %h2#timerLabel 00:00:00
+  %input#startBtn{type: 'button', value: 'START'}
+  %input#stopBtn{type: 'button', value: 'STOP'}
+  %input#resetBtn{type: 'button', value: 'RESET'}
+
+= link_to 'トップページへ', root_path
+= link_to '文字数カウンター', counter_path
