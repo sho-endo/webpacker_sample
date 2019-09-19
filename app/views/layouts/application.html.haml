@@ -6,6 +6,9 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_pack_tag params[:controller], media: 'all'
-    = javascript_pack_tag params[:controller]
+    %link{href: "https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: "stylesheet"}
   %body
     = yield
+    = javascript_pack_tag params[:controller]
+    %script{src: "https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"}
