@@ -1,7 +1,9 @@
-%h1#heading Home#top
+%h1#heading Top page
 
-%input{type: 'button', value: 'Change Text', name: 'text-change-btn'}
-= link_to '文字数カウンター', counter_path, class: 'link'
-= link_to 'ストップウォッチ ', stopwatch_path, class: 'link'
+#text-change-btn.mdc-button.mdc-button--raised Click me!
 
-= image_pack_tag 'images/test.jpg'
+= image_pack_tag 'images/test.jpg', class: "img"
+
+.btn-wrapper
+  = link_to '文字数カウンター', counter_path, class: 'mdc-button mdc-button--raised'
+  = link_to 'ストップウォッチ ', stopwatch_path, class: 'mdc-button mdc-button--unelevated'

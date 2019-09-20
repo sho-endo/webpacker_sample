@@ -1,9 +1,14 @@
-%h1 カウンター
+%h1.mdc-typography--headline5 文字数カウンター
+.mdc-text-field.text-field.mdc-text-field--textarea
+  %textarea#textarea.mdc-text-field__input{rows: 8, cols: 40}
+  .mdc-notched-outline
+    .mdc-notched-outline__leading
+    .mdc-notched-outline__notch
+      %label.mdc-floating-label{for: 'textarea'} 文章を入力してください
+    .mdc-notched-outline__trailing
 
-%textarea#text-field{rows: 6, cols: 50}
-#strLen 0文字
-%a#clear-btn{href: '#'} クリア
-
-%br
-= link_to 'トップページへ', root_path, class: 'link'
-= link_to 'ストップウォッチ ', stopwatch_path, class: 'link'
+#strLen.mdc-typography--body1 0文字
+%button#clear-btn.mdc-button.mdc-button--outlined クリア
+.btn-wrapper
+  = link_to 'トップページへ', root_path, class: 'mdc-button mdc-button--raised'
+  = link_to 'ストップウォッチ ', stopwatch_path, class: 'mdc-button mdc-button--unelevated'

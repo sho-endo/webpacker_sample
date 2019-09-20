@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const textField = document.getElementById('text-field');
+  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+  [].map.call(document.querySelectorAll('.mdc-button'), el => {
+    mdc.ripple.MDCRipple.attachTo(el);
+  });
+
+  const textField = document.getElementById('textarea');
   textField.addEventListener('keyup', () => {
     const length = textField.value.length;
     document.getElementById('strLen').innerText = `${length}文字`;
