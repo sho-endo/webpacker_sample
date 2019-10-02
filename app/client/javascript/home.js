@@ -1,5 +1,7 @@
+import {MDCRipple} from '@material/ripple/index';
+
 document.addEventListener('DOMContentLoaded', () => {
-  mdc.ripple.MDCRipple.attachTo(document.querySelector('#text-change-btn'));
+  const ripple = new MDCRipple(document.querySelector('#text-change-btn'));
   const btn = document.getElementById('text-change-btn');
   btn.addEventListener('click', () => {
     const text = document.getElementById('heading');

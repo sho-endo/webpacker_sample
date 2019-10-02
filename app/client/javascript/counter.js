@@ -1,7 +1,9 @@
+import {MDCTextField} from '@material/textfield';
+
 document.addEventListener('DOMContentLoaded', () => {
-  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
-  [].map.call(document.querySelectorAll('.mdc-button'), el => {
-    mdc.ripple.MDCRipple.attachTo(el);
+  // ref: https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md#instantiating-components-via-css-selector-queries
+  const textFields = [].map.call(document.querySelectorAll('.mdc-text-field'), function(el) {
+    return new MDCTextField(el);
   });
 
   const textField = document.getElementById('textarea');
