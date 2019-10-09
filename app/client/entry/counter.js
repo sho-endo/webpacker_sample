@@ -1,4 +1,4 @@
-import '../stylesheets/counter.scss'
+import '../stylesheets/counter'
 import '../javascript/counter'
 require.context('../images', true, /\.(png|jpg|jpeg|svg)$/);
 

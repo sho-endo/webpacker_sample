@@ -1,4 +1,4 @@
-import '../stylesheets/home.scss'
+import '../stylesheets/home'
 import '../javascript/home'
 require.context('../images', true, /\.(png|jpg|jpeg|svg)$/);
 
