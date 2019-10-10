@@ -1,4 +1,4 @@
-import '../stylesheets/stopwatch.scss'
+import '../stylesheets/stopwatch'
 import '../javascript/stopwatch'
 require.context('../images', true, /\.(png|jpg|jpeg|svg)$/);
 

@@ -1,14 +1,11 @@
+import {MDCRipple} from '@material/ripple/index';
+
 document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementsByName('text-change-btn')[0];
-  btn.addEventListener('mouseover', () => {
+  const ripple = new MDCRipple(document.querySelector('#text-change-btn'));
+  const btn = document.getElementById('text-change-btn');
+  btn.addEventListener('click', () => {
     const text = document.getElementById('heading');
     text.innerText = 'Hello, webpacker!';
     text.style.color = 'blue';
   });
-
-  btn.addEventListener('mouseout', () => {
-    const text = document.getElementById('heading');
-    text.innerText = 'Home#top';
-    text.style.color = 'gray';
-  })
 });
