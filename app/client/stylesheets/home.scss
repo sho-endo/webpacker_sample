@@ -54,11 +54,6 @@ $mdc-theme-background: #fff;
 
 .element-card.water {
   --mdc-theme-primary: #00bcd4;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: 1;
-  background-clip: inherit;
 }
 
 #demo-absolute-fab {
@@ -66,5 +61,4 @@ $mdc-theme-background: #fff;
   bottom: 1rem;
   right: 1rem;
   z-index: 1;
-  background-clip: inherit;
 }
